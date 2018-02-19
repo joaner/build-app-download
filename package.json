@@ -1,0 +1,17 @@
+{
+  "name": "getapp",
+  "version": "0.1.0",
+  "description": "create app download page with configure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "joaner",
+  "license": "ISC",
+  "devDependencies": {
+    "extract-loader": "^1.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "webpack": "^3.11.0"
+  }
+}
