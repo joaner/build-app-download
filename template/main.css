@@ -1,29 +1,113 @@
 body {
   padding: 0;
   margin: 0;
+  font-size: 1em;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
 }
 
-.cell {
-  position: absolute;
-  display: inline-block;
-  width: 50%;
-  height: 100%;
-  box-sizing: border-box;
+.wrapper {
+  font-size: 0;
+  line-height: 0;
 }
-.background {
+
+.screens {
+  position: relative;
+}
+.screens .background {
   position: absolute;
   z-index: -1;
   width: 100%;
   height: 100%;
 }
-.background img {
+.screens .background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.screens .phone {
+  width: 318px;
+  height: 650px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.screens .phone .screenshots {
+  width: 276px;
+  height: 506px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 64px;
+  left: 21px;
+  overflow: hidden;
+}
+.screens .phone .screenshots li img {
+  width: 100%;
+  height: 100%;
+}
+
+.details {
+  padding: 3rem;
+}
+.details h1 {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #333;
+}
+.details p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #666;
+}
+.details p.description {
+  color: #999;
+}
+
+.details .downloads a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.details .downloads a img {
+  width: 200px;
+  height: 56px;
+}
 
 @media (max-width: 768px) {
-  .cell {
+  html {
+    font-size: .75em;
+  }
+  .screens, .details {
     display: block;
+  }
+  .screens {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  .screens {
+    width: 460px;
+    min-width: 400px;
+    max-width: 50%;
+    position: relative;
+    float: left;
+  }
+  .details {
+    flex: 1;
   }
 }
