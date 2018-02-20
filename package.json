@@ -1,12 +1,16 @@
 {
   "name": "getapp",
   "version": "0.1.0",
-  "description": "create app download page with configure",
+  "description": "build my app download page with webpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --open",
     "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaner/getapp.git"
   },
   "author": "joaner",
   "license": "ISC",
@@ -17,5 +21,9 @@
     "html-webpack-plugin": "^2.30.1",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/joaner/getapp/issues"
+  },
+  "homepage": "https://github.com/joaner/getapp#readme"
 }
