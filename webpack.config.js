@@ -1,10 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  entry: [
-    path.join(__dirname, 'template', 'main.js'),
-    path.join(__dirname, 'template', 'index.html')
-  ],
+  entry: path.join(__dirname, 'template', 'index.html'),
 
   output: {
     path: path.resolve(__dirname, 'dist'),
