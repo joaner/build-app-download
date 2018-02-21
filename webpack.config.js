@@ -39,12 +39,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         loaders: [
           {
             loader: "file-loader",
             options: {
-              name: "assets/[name].[hash:6].[ext]",
+              name: "assets/[name].[hash:6].css",
             },
           },
           {
@@ -52,6 +52,9 @@ module.exports = {
           },
           {
             loader: "css-loader",
+          },
+          {
+            loader: "less-loader",
           },
         ],
       },
