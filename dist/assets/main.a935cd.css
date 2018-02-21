@@ -54,6 +54,8 @@ body {
 /* right */
 .details {
   padding: 3rem;
+  font-size: 1rem;
+  line-height: 1.25;
 }
 .details header {
   font-family: 'Bellefair', 'Helvetica', 'Arial', sans-serif;
@@ -134,6 +136,7 @@ body {
   }
   .details {
     flex: 1;
+    position: relative;
   }
   .details footer {
     position: absolute;
